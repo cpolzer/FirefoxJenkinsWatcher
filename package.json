@@ -1,0 +1,42 @@
+{
+  "title": "JenkinsWatcher",
+  "name": "JenkinsWatcher",
+  "version": "0.0.1",
+  "description": "A jenkins json feed subscribing firefox addon. For Firefox version >= 38 ",
+  "main": "index.js",
+  "author": "cpolzer",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "preferences": [
+    {
+        "name": "jenkins_url",
+        "title": "Jenkins URL",
+        "description": "The basic jankins url",
+        "type": "string",
+        "value": "http://servername:port"
+    },
+    {
+        "name": "jenkins_view_name",
+        "title": "The view name in Jenkins",
+        "description": "The view name in Jenkins",
+        "type": "string",
+        "value": "VIEW_NAME"
+    },
+    {
+        "name": "api_url",
+        "title": "Json api url",
+        "description": "This holds the basic json api url needed to retrieve data. The result should hold a array of jobs with the attributes name and color.",
+        "type": "string",
+        "value": "api/json?tree=jobs[name,url,color]"
+    },
+    {
+        "name": "matching_colors",
+        "title": "Matching build states to colors",
+        "description": "Defines states(colors) against which the addon shall match and then react.",
+        "type": "string",
+        "value": "red"
+    }
+    ]
+}
