@@ -5,11 +5,13 @@ A simple Firefox Addon to have a Jenkins view watcher showing status of desired 
 Install node and Mozilla's jpm:
 https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation
 
--on unix run with
-  jpm run -b /path/to/your/firefox --debug
+Run with
 
--build with
-  jpm  xpi
+    jpm run -b /path/to/your/firefox --debug
+
+Build with
+
+    jpm  xpi
 
 #Development:
 https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials
